@@ -245,7 +245,7 @@ console.log(result, typeof result)
 
 //////////////////////////
 // Lesson 19 For Loops
-
+/*
 // for loops
 
 // for (let i = 0; i < 5; i++) {
@@ -260,4 +260,22 @@ for (let i = 0; i < names.length; i++) {
 	// console.log(names[i])
 	let html = `<div>${names[i]}</div>`
 	console.log(html)
+}
+*/
+//////////////////////////
+// Lesson 20 While Loops
+
+// while loops
+const names = ['shaun', 'mario', 'luigi']
+// let i = 0
+
+// while (i < 5) {
+// 	console.log('in loop: ', i)
+// 	i++
+// }
+
+let i = 0
+while (i < names.length) {
+	console.log(names[i])
+	i++
 }
