@@ -66,7 +66,7 @@ console.log(result)
 
 //////////////////////////
 // Lesson 11 Numbers
-
+/*
 let radius = 10
 const pi = 3.14
 
@@ -104,3 +104,30 @@ let likes = 10
 
 let result = 'the blog has ' + likes + ' likes'
 console.log(result)
+*/
+
+//////////////////////////
+// Lesson 12 Template Strings
+
+// template strings
+const title = 'Best reads of 2019'
+const author = 'Mario'
+const likes = 30
+
+// concatenation way
+// let result =
+// 	'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes'
+// console.log(result)
+
+// template string way
+let result = `The blog called ${title} by ${author} has ${likes} likes`
+console.log(result)
+
+// creating html templates
+let html = `
+<h2>${title}</h2>
+<p>By ${author}</p>
+<span>This blog has ${likes} likes</span>
+`
+
+console.log(html)
