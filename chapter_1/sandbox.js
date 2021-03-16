@@ -227,6 +227,7 @@ console.log(age !== '25')
 //////////////////////////
 // Lesson 17 Type Conversion
 
+/*
 // type conversion
 let score = '100'
 
@@ -240,3 +241,23 @@ let score = '100'
 let result = Boolean('')
 
 console.log(result, typeof result)
+*/
+
+//////////////////////////
+// Lesson 19 For Loops
+
+// for loops
+
+// for (let i = 0; i < 5; i++) {
+// 	console.log('in loop:', i)
+// }
+
+// console.log('loop finished')
+
+const names = ['shaun', 'mario', 'luigi']
+
+for (let i = 0; i < names.length; i++) {
+	// console.log(names[i])
+	let html = `<div>${names[i]}</div>`
+	console.log(html)
+}
