@@ -108,7 +108,7 @@ console.log(result)
 
 //////////////////////////
 // Lesson 12 Template Strings
-
+/*
 // template strings
 const title = 'Best reads of 2019'
 const author = 'Mario'
@@ -131,3 +131,30 @@ let html = `
 `
 
 console.log(html)
+*/
+
+//////////////////////////
+// Lesson 13 Arrays
+
+let ninjas = ['shaun', 'ryu', 'chun-li']
+
+// ninjas[1] = 'ken'
+// console.log(ninjas[1])
+
+// let ages = [20, 25, 30, 35]
+// console.log(ages[2])
+
+// let random = ['shaun', 'crystal', 30, 20]
+// console.log(random)
+
+// console.log(ninjas.length)
+
+// array methods
+
+// let result = ninjas.join('-')
+// let result = ninjas.indexOf('chun-li')
+// let result = ninjas.concat(['ken', 'crystal'])
+let result = ninjas.push('ken')
+result = ninjas.pop()
+
+console.log(result)
