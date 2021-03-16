@@ -135,7 +135,7 @@ console.log(html)
 
 //////////////////////////
 // Lesson 13 Arrays
-
+/*
 let ninjas = ['shaun', 'ryu', 'chun-li']
 
 // ninjas[1] = 'ken'
@@ -158,3 +158,11 @@ let result = ninjas.push('ken')
 result = ninjas.pop()
 
 console.log(result)
+*/
+
+//////////////////////////
+// Lesson 14 Null & Undefined
+
+let age = null
+
+console.log(age, age + 3, `the age is ${age}`)
