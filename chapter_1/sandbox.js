@@ -339,6 +339,7 @@ if (password.length >= 12) {
 //////////////////////////
 // Lesson 24. Logical Operators
 
+/*
 // logical operators - OR || and AND &&
 
 const password = 'p@ss'
@@ -353,3 +354,18 @@ if (password.length >= 12 && password.includes('@')) {
 } else {
 	console.log('password is not strong enough')
 }
+*/
+
+//////////////////////////
+// Lesson 25. Logical NOT
+
+// logical NOT (!)
+
+let user = false
+
+if (!user) {
+	console.log('you must be logged in to continue')
+}
+
+console.log(!true)
+console.log(!false)
