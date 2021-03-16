@@ -170,7 +170,7 @@ console.log(age, age + 3, `the age is ${age}`)
 
 //////////////////////////
 // Lesson 15 Booleans & Comparisons
-
+/*
 // booleans & comparisons
 console.log(true, false, 'true', 'false')
 
@@ -201,3 +201,23 @@ console.log(name == 'Shaun')
 console.log(name > 'crystal')
 console.log(name > 'Shaun')
 console.log(name > 'Crystal')
+*/
+
+//////////////////////////
+// Lesson 16 Loose vs Strict Comparison
+
+let age = 25
+
+// loose comparison (different types can still be equal)
+
+// console.log(age == 25)
+// console.log(age == '25')
+// console.log(age != 25)
+// console.log(age != '25')
+
+// strict comparison (different types cannot be equal)
+
+console.log(age === 25)
+console.log(age === '25')
+console.log(age !== 25)
+console.log(age !== '25')
