@@ -555,6 +555,7 @@ console.log(bill([10, 15, 30], 0.2))
 //////////////////////////
 // Lesson 34. Functions vs Methods
 
+/*
 const name = 'shaun'
 
 // functions
@@ -567,3 +568,41 @@ console.log(resultOne)
 // methods
 let resultTwo = name.toUpperCase()
 console.log(resultTwo)
+*/
+
+//////////////////////////
+// Lesson 35. Foreach Methods & Callbacks
+
+// callback & foreach
+
+// const myFunc = callbackFunc => {
+// 	// do something
+// 	let value = 50
+// 	callbackFunc(value)
+// }
+
+// myFunc(function (value) {
+// 	// do something
+// 	console.log(value)
+// })
+
+// myFunc(value => {
+// 	// do something
+// 	console.log(value)
+// })
+
+let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li']
+
+// people.forEach(function (person) {
+// 	console.log(person)
+// })
+
+const logPerson = (person, index) => {
+	console.log(`${index} - hello ${person}`)
+}
+
+// people.forEach((person, index) => {
+// 	console.log(index, person)
+// })
+
+people.forEach(logPerson)
