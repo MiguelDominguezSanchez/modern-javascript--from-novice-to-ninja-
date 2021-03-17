@@ -507,6 +507,7 @@ speak('shaun')
 //////////////////////////
 // Lesson 33. Arrow Functions
 
+/*
 // regular function
 // const calcArea = function (radius) {
 // 	return 3.14 * radius ** 2
@@ -549,3 +550,20 @@ const bill = (products, tax) => {
 }
 
 console.log(bill([10, 15, 30], 0.2))
+*/
+
+//////////////////////////
+// Lesson 34. Functions vs Methods
+
+const name = 'shaun'
+
+// functions
+
+const greet = () => 'hello'
+
+let resultOne = greet()
+console.log(resultOne)
+
+// methods
+let resultTwo = name.toUpperCase()
+console.log(resultTwo)
