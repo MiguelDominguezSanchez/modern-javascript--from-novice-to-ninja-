@@ -431,6 +431,7 @@ switch (grade) {
 //////////////////////////
 // Lesson 28. Variables & Block Scope
 
+/*
 // variables && block scope
 const age = 30
 
@@ -447,3 +448,27 @@ if (true) {
 }
 
 console.log('outside code block: ', age, name, test)
+*/
+
+//////////////////////////
+// Lesson 29. What are Functions
+
+//////////////////////////
+// Lesson 30. Function Declarations & Expressions
+
+// function expression
+const speak = function () {
+	console.log('good day!')
+}
+// greet()
+// greet()
+// greet()
+
+speak()
+speak()
+speak()
+
+// function declaration
+function greet() {
+	console.log('hello there')
+}
