@@ -456,6 +456,7 @@ console.log('outside code block: ', age, name, test)
 //////////////////////////
 // Lesson 30. Function Declarations & Expressions
 
+/*
 // function expression
 const speak = function () {
 	console.log('good day!')
@@ -472,3 +473,14 @@ speak()
 function greet() {
 	console.log('hello there')
 }
+*/
+
+//////////////////////////
+// Lesson 31. Arguments & Parameters
+
+const speak = function (name = 'luigi', time = 'night') {
+	console.log(`good ${time} ${name}!`)
+}
+
+speak()
+speak('shaun')
