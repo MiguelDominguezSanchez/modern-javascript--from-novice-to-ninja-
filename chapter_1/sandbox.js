@@ -613,6 +613,7 @@ people.forEach(logPerson)
 //////////////////////////
 // Lesson 36. Callback Functions in Action
 
+/*
 // get a reference tto the 'ul'
 
 const ul = document.querySelector('.people')
@@ -628,3 +629,32 @@ people.forEach(person => {
 
 console.log(html)
 ul.innerHTML = html
+*/
+
+//////////////////////////
+// Lesson 38. Creating an Object Literal
+
+// object literals
+
+let user = {
+	name: 'crystal',
+	age: 30,
+	email: 'crystal@thenetninja.co.uk',
+	location: 'berlin',
+	blogs: ['why mac & cheese rules', '10 things to make with  marmite'],
+}
+
+console.log(user)
+console.log(user.name)
+
+// user.age = 35
+console.log(user.age)
+
+// const key = 'location'
+
+// console.log(user['key']) // user['location']
+console.log(user['location'])
+user['name'] = 'chun-li'
+console.log(user['name'])
+
+console.log(typeof user)
