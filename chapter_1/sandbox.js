@@ -719,6 +719,7 @@ console.log(this)
 //////////////////////////
 // Lesson 41. Objects in Arrays
 
+/*
 // const blogs = [
 // 	{ title: 'why mac & cheese rules', likes: 30 },
 // 	{ title: '10 things to make with  marmite', likes: 50 },
@@ -752,3 +753,27 @@ let user = {
 
 user.logBlogs()
 // console.log(this)s
+*/
+
+//////////////////////////
+// Lesson 42. Math Object
+
+// Math object
+
+console.log(Math)
+console.log(Math.PI)
+console.log(Math.E)
+
+const area = 7.7
+
+console.log(Math.round(area))
+console.log(Math.floor(area))
+console.log(Math.ceil(area))
+console.log(Math.trunc(area))
+
+// random numbers
+
+const random = Math.random()
+
+console.log(random)
+console.log(Math.round(random * 100))
