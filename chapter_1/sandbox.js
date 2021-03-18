@@ -573,6 +573,8 @@ console.log(resultTwo)
 //////////////////////////
 // Lesson 35. Foreach Methods & Callbacks
 
+/*
+
 // callback & foreach
 
 // const myFunc = callbackFunc => {
@@ -606,3 +608,23 @@ const logPerson = (person, index) => {
 // })
 
 people.forEach(logPerson)
+*/
+
+//////////////////////////
+// Lesson 36. Callback Functions in Action
+
+// get a reference tto the 'ul'
+
+const ul = document.querySelector('.people')
+
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li']
+
+let html = ``
+
+people.forEach(person => {
+	// create html template
+	html += `<li style="color: purple">${person}</li>`
+})
+
+console.log(html)
+ul.innerHTML = html
