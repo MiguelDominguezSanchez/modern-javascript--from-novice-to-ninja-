@@ -34,6 +34,7 @@ console.log(paras[1])
 /////////////////////////
 // 48. Adding & Changing Page Content
 
+/*
 const para = document.querySelector('p')
 
 // console.log(para.innerText)
@@ -56,3 +57,19 @@ const people = ['mario', 'luigi', 'yoshi']
 people.forEach(person => {
 	content.innerHTML += `<p>${person}</p>`
 })
+*/
+
+/////////////////////////
+// 49. Getting & Setting Attributes
+
+const link = document.querySelector('a')
+
+console.log(link.getAttribute('href'))
+link.setAttribute('href', 'http://www.thenetninja.co.uk')
+link.innerText = 'The Net Ninja Website'
+
+const mssg = document.querySelector('p')
+
+console.log(mssg.getAttribute('class'))
+mssg.setAttribute('class', 'success')
+mssg.setAttribute('style', 'color: green')
