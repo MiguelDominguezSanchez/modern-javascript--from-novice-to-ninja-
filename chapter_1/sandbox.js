@@ -124,6 +124,7 @@ title.classList.toggle('test')
 /////////////////////////
 // 52. Parents, Children & Siblings
 
+/*
 const article = document.querySelector('article')
 
 // console.log(article.children)
@@ -131,15 +132,37 @@ const article = document.querySelector('article')
 // console.log(article.children)
 
 // Array.from(article.children).forEach(child => {
-// 	child.classList.add('article-element')
+    // 	child.classList.add('article-element')
+    // })
+    
+    const title = document.querySelector('h2')
+    
+    console.log(title.parentElement)
+    console.log(title.parentElement.parentElement)
+    console.log(title.nextElementSibling)
+    console.log(title.previousElementSibling)
+    
+    // chaining
+    console.log(title.nextElementSibling.parentElement.children)
+    */
+
+/////////////////////////
+// 53. Events Basics (click events)
+
+// const button = document.querySelector('button')
+
+// button.addEventListener('click', () => {
+// 	console.log('you clicked me')
 // })
 
-const title = document.querySelector('h2')
+const items = document.querySelectorAll('li')
 
-console.log(title.parentElement)
-console.log(title.parentElement.parentElement)
-console.log(title.nextElementSibling)
-console.log(title.previousElementSibling)
-
-// chaining
-console.log(title.nextElementSibling.parentElement.children)
+items.forEach(item => {
+	item.addEventListener('click', e => {
+		// console.log('item clicked')
+		// console.log(e)
+		// console.log(e.target)
+		// console.log(item)
+		e.target.style.textDecoration = 'line-through'
+	})
+})
