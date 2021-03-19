@@ -66,6 +66,7 @@ console.log(saleProducts, products)
 /////////////////////////
 // Reduce Method
 
+/*
 // reduce method
 // const scores = [10, 20, 60, 40, 70, 90, 30]
 
@@ -105,3 +106,18 @@ const marioTotal = scores.reduce((acc, curr) => {
 }, 0)
 
 console.log(marioTotal)
+*/
+
+/////////////////////////
+// Find Method
+
+// find method
+const scores = [10, 5, 0, 40, 30, 10, 90, 70]
+
+// const firstHighScore = scores.find(score => {
+// 	return score > 50
+// })
+
+const firstHighScore = scores.find(score => score > 50)
+
+console.log(firstHighScore)
