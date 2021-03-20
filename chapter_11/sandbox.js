@@ -33,7 +33,7 @@ console.log(now.toLocaleString())
 // timestamps & comparisons
 
 // timestamps
-
+/*
 const before = new Date('February 1 2019 7:30:59')
 const now = new Date()
 
@@ -53,3 +53,27 @@ console.log(`he blog was written ${days} ago`)
 // converting timestamp into date objects
 const timestamp = 1675938474990
 console.log(new Date(timestamp))
+*/
+
+/////////////////////////
+// 84. Building a Digital clock
+// building a digital clock
+const clock = document.querySelector('.clock')
+
+const tick = () => {
+	const now = new Date()
+
+	const h = now.getHours()
+	const m = now.getMinutes()
+	const s = now.getSeconds()
+
+	const html = `
+        <span>${h}</span> : 
+        <span>${m}</span> : 
+        <span>${s}</span>
+    `
+
+	clock.innerHTML = html
+}
+
+setInterval(tick, 1000)
