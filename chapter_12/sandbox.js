@@ -175,6 +175,7 @@ getTodos('todos/luigis.json')
 ///////////////////////
 // 95. Chaining Promises
 
+/*
 const getTodos = resource => {
 	return new Promise((resolve, reject) => {
 		const request = new XMLHttpRequest()
@@ -207,4 +208,22 @@ getTodos('todos/luigi.json')
 	})
 	.catch(err => {
 		console.log('promise rejected:', err)
+	})
+    */
+
+///////////////////////
+// 96. The Fetch API
+
+// fetch api
+
+fetch('todos/luigi.json')
+	.then(response => {
+		console.log('resolved', response)
+		return response.json()
+	})
+	.then(data => {
+		console.log(data)
+	})
+	.catch(err => {
+		console.log('rejected', err)
 	})
