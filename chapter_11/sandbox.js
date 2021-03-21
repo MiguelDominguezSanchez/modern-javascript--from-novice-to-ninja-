@@ -58,6 +58,7 @@ console.log(new Date(timestamp))
 /////////////////////////
 // 84. Building a Digital clock
 // building a digital clock
+/*
 const clock = document.querySelector('.clock')
 
 const tick = () => {
@@ -77,3 +78,22 @@ const tick = () => {
 }
 
 setInterval(tick, 1000)
+*/
+
+/////////////////////////
+// 85. Date-fns Library
+const now = new Date(732462363)
+
+// console.log(dateFns.isToday(now))
+
+// format options
+console.log(dateFns.format(now, 'YYYY'))
+console.log(dateFns.format(now, 'MMM'))
+console.log(dateFns.format(now, 'dddd'))
+console.log(dateFns.format(now, 'Do'))
+console.log(dateFns.format(now, 'dddd, Do, MMMM, YYYY'))
+
+// comparing dates
+const before = new Date('February 1 2019 12:00:00')
+
+console.log(dateFns.distanceInWords(now, before, { addSuffix: true }))
