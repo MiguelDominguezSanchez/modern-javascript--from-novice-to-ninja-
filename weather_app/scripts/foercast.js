@@ -1,1 +1,15 @@
-const key = 'k4gJx8hA1cll3f1kNupJ6gSDmw0kOAOU'
+const key = 'b5EOiuhKWskf1XGVQu20N7wbwkOaMk2s'
+
+const getCity = async city => {
+	const base = 'http://dataservice.accuweather.com/locations/v1/cities/search'
+	const query = `?apikey=${key}&q=${city}`
+
+	const response = await fetch(base + query)
+	const data = await response.json()
+
+	return data[0]
+}
+
+getCity('manchester')
+	.then(data => console.log(data))
+	.catch(err => console.log(err))
